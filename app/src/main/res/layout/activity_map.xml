@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <Button
+        android:id="@+id/Searchbtn"
+        android:layout_width="308dp"
+        android:layout_height="65dp"
+        android:text="Search"
+        android:textColorLink="#C67DD5"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.478"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="249dp" />
+
+    <EditText
+        android:id="@+id/end"
+        android:layout_width="308dp"
+        android:layout_height="65dp"
+        android:ems="10"
+        android:hint="End Point"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.376"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="177dp" />
+
+    <EditText
+        android:id="@+id/start"
+        android:layout_width="308dp"
+        android:layout_height="65dp"
+        android:ems="10"
+        android:hint="Starting Point"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.236"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="98dp" />
+
+    <TextView
+        android:id="@+id/TopTxt"
+        android:layout_width="332dp"
+        android:layout_height="62dp"
+        android:text="Search Destination"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.079"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
