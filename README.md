@@ -1,2 +1,2 @@
-# Cash Coach OUSLa
+# Cash Coach OUSL
 
