@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- XML declaration specifying version and encoding -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.expensemanager">
+    <!-- Defines the XML namespace for Android and specifies the package name -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ExpenseManager">
+<<<<<<< Updated upstream
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".ResetPasswordActivity" />
+        <activity android:name=".RegistrationActivity" />
+        <activity android:name=".SplashScreen">
+=======
+        <!-- Application element with attributes defining app-wide settings -->
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <!-- Main activity declaration with exported attribute for accessibility -->
+
+>>>>>>> Stashed changes
+            <intent-filter>
+                <!-- Intent filter for actions this activity can respond to -->
+                <action android:name="android.intent.action.MAIN" />
+                <!-- Specifies that this activity is the main entry point of the app -->
+                <category android:name="android.intent.category.LAUNCHER" />
+                <!-- Indicates that this activity should appear in the system's launcher -->
+            </intent-filter>
+        </activity>
+
+        <!-- Declaration of other activities -->
+        <activity android:name=".HomeActivity" />
+        <!-- Secondary activity for home screen -->
+
+        <activity android:name=".ResetPasswordActivity" />
+        <!-- Activity for resetting passwords -->
+
+        <activity android:name=".RegistrationActivity" />
+        <!-- Activity for user registration -->
+
+        <activity android:name=".SplashScreen">
+            <!-- Splash screen activity declaration -->
+
+            <intent-filter>
+                <!-- Intent filter for actions this activity can respond to -->
+                <action android:name="android.intent.action.MAIN" />
+                <!-- Specifies that this activity is the main entry point of the app -->
+                <category android:name="android.intent.category.LAUNCHER" />
+                <!-- Indicates that this activity should appear in the system's launcher -->
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MapActivity" />
+        <activity android:name=".SensorActivity" />
+
+
+    </application>
+</manifest>

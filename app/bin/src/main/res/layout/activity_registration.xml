@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background"
+    tools:context=".RegistrationActivity">
+
+    <!-- ScrollView to allow scrolling when content exceeds screen height -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Nested LinearLayout for vertical arrangement of content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center" >
+
+            <!-- ImageView for displaying the app logo -->
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/app_logo" />
+
+            <!-- TextView for prompting new users to sign up -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/you_seem_new_here_signup"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:gravity="center" />
+
+            <!-- EditText for entering email -->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Email"
+                android:id="@+id/email_signup" />
+
+            <!-- EditText for entering password -->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:inputType="textPassword"
+                android:hint="Password"
+                android:id="@+id/password_signup" />
+
+            <!-- Button to initiate sign up process -->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Sign Up"
+                android:id="@+id/btn_signup"
+                android:textAppearance="?android:textAppearanceLarge" />
+
+            <!-- TextView for prompting users to login if they already have an account -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:id="@+id/login"
+                android:text="Already have an account? Login Now" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
