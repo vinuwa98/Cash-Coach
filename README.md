@@ -1,1 +1,1 @@
-# Cash-Coach OUSL
+# CashCoach OUSL
