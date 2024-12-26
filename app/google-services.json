@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "250093115862",
+    "project_id": "cashcoach-21e27",
+    "storage_bucket": "cashcoach-21e27.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:250093115862:android:19f1ca613b98b0a61aac77",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbgBTRgdochdc2Aezk9vnS68q41y6efn0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
