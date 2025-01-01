@@ -25,7 +25,18 @@ public class change_password extends AppCompatActivity {
 
     private FirebaseAuth mAuth;
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_change_password);
 
+        mAuth= FirebaseAuth.getInstance();
+        FirebaseUser user=mAuth.getCurrentUser();
+
+        changePass=findViewById(R.id.btnChange);
+
+        EditText oldPass=findViewById(R.id.old_pass);
+        EditText NewPass=findViewById(R.id.new_pass);
 
         changePass.setOnClickListener(new View.OnClickListener() {
             @Override
