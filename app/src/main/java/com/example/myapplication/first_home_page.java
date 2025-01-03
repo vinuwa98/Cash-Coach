@@ -100,7 +100,44 @@ public class first_home_page extends AppCompatActivity implements NavigationView
         mUserInfoDatabase.addListenerForSingleValueEvent(valueEventListener);
 
 
-        
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()){
+                    case R.id.dashboard:
+                        setFragment(dashboardFragment);
+                        bottomNavigationView.setItemBackgroundResource(R.color.dashboard_color);
+                        return true;
+
+                    case R.id.income:
+                        setFragment(incomeFragment);
+                        bottomNavigationView.setItemBackgroundResource(R.color.income_color);
+                        return true;
+
+                    case R.id.income_search:
+                        Intent intent=new Intent(getApplicationContext(),searchdata.class);
+                        startActivity(intent);
+                        bottomNavigationView.setItemBackgroundResource(R.color.expense_color);
+                        return true;
+
+                    case R.id.expense:
+                        setFragment(expenseFragment);
+                        bottomNavigationView.setItemBackgroundResource(R.color.expense_color);
+                        return true;
+
+                    case R.id.expense_search:
+                        Intent intent1=new Intent(getApplicationContext(),searchdata2.class);
+                        startActivity(intent1);
+                        bottomNavigationView.setItemBackgroundResource(R.color.expense_color);
+                        return true;
+
+                    default:
+                        return false;
+
+                }
+
+            }
+        });
 
         items =new  ArrayList<HashMap<String,Object>>();
         pm = getPackageManager();
