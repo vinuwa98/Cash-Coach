@@ -33,7 +33,33 @@ public class resetpassword extends AppCompatActivity {
 
         resetpassword.setOnClickListener(new View.OnClickListener() {
             @Override
-           
+            public void onClick(View v) {
+                String useremail=passwordEmail.getText().toString().trim();
+
+                if(useremail.equals(""))
+                {
+                  passwordEmail.setError("Email Required...",null);
+                  return;
+                }
+                else
+                {
+                    firebaseAuth.sendPasswordResetEmail(useremail).addOnCompleteListener(new OnCompleteListener<Void>() {
+                        @Override
+                        public void onComplete(@NonNull Task<Void> task) {
+                            if(task.isSuccessful())
+                            {
+                                Toast.makeText(resetpassword.this,"Email sent successfully..",Toast.LENGTH_LONG).show();
+                                finish();
+                                startActivity(new Intent(resetpassword.this,home_screen.class));
+                            }
+                            else
+                            {
+                                Toast.makeText(resetpassword.this,"Error sending email..",Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                    });
+                }
+            }
         });
     }
 }
