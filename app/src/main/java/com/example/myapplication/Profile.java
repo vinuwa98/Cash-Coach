@@ -41,38 +41,7 @@ public class Profile extends AppCompatActivity {
     Button changepass;
     Button deleteaccount;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile);
-
-        mAuth= FirebaseAuth.getInstance();
-        FirebaseUser mUser=mAuth.getCurrentUser();
-        String uid = mUser.getUid();
-        DatabaseReference mUserInfoDatabase = FirebaseDatabase.getInstance().getReference().child("UserInfo").child(uid);
-        ValueEventListener valueEventListener = new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                String userEmail = dataSnapshot.child("Email").getValue().toString();
-                TextView email=findViewById(R.id.email_profile);
-                email.setText(userEmail);
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {}
-        };
-        mUserInfoDatabase.addListenerForSingleValueEvent(valueEventListener);
-
-        changepass=findViewById(R.id.btn_changepass);
-        deleteaccount=findViewById(R.id.btn_deleteaccount);
-
-        changepass.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(Profile.this,change_password.class);
-                startActivity(intent);
-            }
-        });
+   
 
         deleteaccount.setOnClickListener(new View.OnClickListener() {
             @Override
