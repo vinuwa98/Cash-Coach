@@ -109,31 +109,7 @@ public class searchdata2 extends AppCompatActivity {
 
     }
 
-    private void searchType(String name) {
-
-        Query query=mref.orderByChild("date").equalTo(name);
-
-        query.addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-
-                if(snapshot.exists()){
-                    ArrayList<String> listtype=new ArrayList<>();
-                    for(DataSnapshot ds:snapshot.getChildren()){
-                        Data data=ds.getValue(Data.class);
-                        //listtype.add(data.getType());
-                        String strIncome=String.valueOf(data.getAmount());
-                        listtype.add(strIncome+"\n"+data.getType()+"\n"+data.getNote()+"\n"+data.getDate());
-                    }
-
-                    ArrayAdapter adapter=new ArrayAdapter(getApplicationContext(), android.R.layout.simple_list_item_1,listtype);
-                    listdata.setAdapter(adapter);
-
-                }else{
-                    Log.d("ExpenseData","No data found");
-                }
-
-            }
+   
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
