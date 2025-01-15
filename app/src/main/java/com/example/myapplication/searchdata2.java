@@ -73,39 +73,7 @@ public class searchdata2 extends AppCompatActivity {
 
     }
 
-    private void populateSearch(DataSnapshot snapshot) {
-
-        Log.d("ExpenseData","Reading Data");
-        ArrayList<String> names=new ArrayList<>();
-
-        if(snapshot.exists()){
-            for(DataSnapshot ds:snapshot.getChildren()){
-                Data data=ds.getValue(Data.class);
-                String name=data.getDate();
-
-                //String name=ds.child(data.getId()).child("type").getValue(String.class);
-
-                //Data data=ds.getValue(Data.class);
-                //String name=data.getType();
-
-                names.add(name);
-            }
-
-            ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1,names);
-
-            txtSearch.setAdapter(adapter);
-
-            txtSearch.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                @Override
-                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                    String name=txtSearch.getText().toString();
-                    searchType(name);
-                }
-            });
-
-        }else{
-            Log.d("ExpenseData","No data Found");
-        }
+    
 
     }
 
