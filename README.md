@@ -1,15 +1,8 @@
-# Spendee-Expense-Tracker-and-Budget-Manager
+# Cash Coach
 Spendee is an Android Application developed in Android Studio using Java and Firebase Realtime Database.
-
-![Mockup](https://user-images.githubusercontent.com/68781375/124804864-60522d80-df78-11eb-8686-fd39c9cfed8a.jpg)
-
-## Contributors
-
-[Priyansh Shah](https://github.com/Priyansh42) ● [Hemit Rana](https://github.com/Hemit1409) ● [Jainil Rana](https://github.com/ancjainil) ● [Harshil Rana](https://github.com/harshil311) ● [Manan Shah](https://github.com/Manan2606)
 
 ## Purpose
 In today’s era, subscription services are common. Also you have the usual array of rent and utilities to pay. Plus, money these days is a little tighter than it used to be comparatively speaking and thus we can’t remember where our money goes.
-
 
 Therefore, we decided to find an easier way to get rid of this problem. So as the name itself suggests, this project is an attempt to manage our daily expenses in a more efficient and manageable way.
 
@@ -60,19 +53,8 @@ It can take a good market as it is usable by anyone who are willing to manage th
 * Logout
 
 
-## Demo Video
-
-https://user-images.githubusercontent.com/68781375/160127807-79c42a68-5462-48e6-acb5-dfc5390adfb5.mp4
-
-
 ## 
 __Here in this repository, we have uploaded all the files that are required to develop this application.__
-
-
-__You can download this app from [Spendee.apk](https://github.com/Priyansh42/Spendee-Expense-Tracker-and-Budget-Manager/blob/master/Spendee.apk) folder.__
-
-
-__For more details refer to [SRS_Spendee](https://github.com/Priyansh42/Spendee-Expense-Tracker-and-Budget-Manager/blob/master/SRS_Spendee.doc).__
 
 
 **---------------  N  O  T  E  ---------------**
