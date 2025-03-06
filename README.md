@@ -14,8 +14,6 @@ Instead of keeping a diary or a log of the expenses, this application enables th
 
 
 ## Scope
-This application is for domestic use and for small retailers only and does not meet all the requirements of higher-level businesses.
-
 It can take a good market as it is usable by anyone who are willing to manage their expenses and aiming to save for the future investments and many more.
 
 
