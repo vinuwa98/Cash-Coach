@@ -4,13 +4,13 @@ Cash Coach is an Android Application developed in Android Studio using Java and 
 ## Purpose
 In today’s era, subscription services are common. Also you have the usual array of rent and utilities to pay. Plus, money these days is a little tighter than it used to be comparatively speaking and thus we can’t remeber how exactly we spend our money.
 
-Therefore, we decided to find an easier way to get rid of this problem. So as the name itself suggests, this project is an attempt to manage our daily expenses in a more efficient and manageable way.
+Therefore, we decided to find an easier way to get rid of this problem. So as the name itself suggests, this project is an attempt to manage our daily expenses in a more efficient, simple and manageable way fro daily use.
 
 
 This application allows people to eliminate any unnecessary expenses and figure out if they are able to survive themselves or do they really need to ask help. Typically people are able to optimize their spending by doing some correct decisions.
 
 
-Instead of keeping a diary or a log of the expenses, this application enables the user to not just keep the control on the expenses but also to generate and save reports. So, this application attempts to free the user with as much as possible the burden of manual calculation and to keep the track of the expenditure.
+Instead of keeping a diary or a log of the expenses, this application enables the user to not just keep the control on the expenses but also to generate reports. So, this application attempts to free the user with as much as possible the burden of manual calculation and to keep the track of the expenditure.
 
 
 ## Scope
@@ -37,17 +37,10 @@ It can take a good market as it is usable by anyone who are willing to manage th
 * Expense Data (Insert/ Update/ Delete)
 * Statistical View of Expenses per Day
 * Search Data by Date
-* Income Tax and EMI Calculator
-* Simple Calculator
+
 ### Other Features
 * Login
 * Registration
-* Forgot Password
-* Email Verification 
-* Low Balance Alert
-* Rate Us
-* Change Password
-* Delete Account Permanently
 * Logout
 
 
