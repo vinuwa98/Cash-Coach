@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/app_background">
+
+    <TextView
+        android:id="@+id/tv_loans_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Loans"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="16dp"/>
+
+    <ListView
+        android:id="@+id/list_loans"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_loans_header"
+        android:layout_above="@id/btn_go_to_add_loan"
+        android:divider="#E0E0E0"
+        android:background="#FFFFFF"
+        android:dividerHeight="1dp"/>
+
+    <TextView
+        android:id="@+id/tv_empty_loans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No active loans."
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btn_go_to_add_loan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="+ Add New Loan"
+        android:backgroundTint="#FF9800"
+        android:layout_marginBottom="25dp"
+        android:textColor="#FFFFFF"/>
+
+</RelativeLayout>
