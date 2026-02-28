@@ -43,12 +43,4 @@ It can take a good market as it is usable by anyone who are willing to manage th
 * Registration
 * Logout
 
-
-## 
-__Here in this repository, we have uploaded all the files that are required to develop this application.__
-
-
-**---------------  N  O  T  E  ---------------**
-
-***You may find the emails of email verification and forgot password under the spam folder if not found in the primary inbox.***
  
