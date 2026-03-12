@@ -7,13 +7,7 @@
     android:padding="24dp"
     android:background="#FFFFFF">
 
-    <ImageView
-        android:id="@+id/iv_login_logo"
-        android:layout_width="350dp"
-        android:layout_height="150dp"
-        android:src="@drawable/app_logo"
-        android:scaleType="fitCenter"
-        android:layout_marginBottom="32dp"/>
+
 
     <EditText
         android:id="@+id/login_username"
