@@ -64,15 +64,7 @@
                 android:textColor="#E8EAF6"
                 android:textSize="18sp"/>
 
-            <TextView
-                android:id="@+id/tv_total_balance"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="LKR 0.00"
-                android:textColor="#FFFFFF"
-                android:textSize="36sp"
-                android:textStyle="bold"
-                android:layout_marginTop="8dp"/>
+
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
