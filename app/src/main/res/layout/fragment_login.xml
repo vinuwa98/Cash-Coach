@@ -40,7 +40,14 @@
         android:layout_marginBottom="24dp"
         android:minHeight="48dp"/>
 
-
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:backgroundTint="#3F51B5"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp"/>
 
     <Button
         android:id="@+id/btn_go_to_signup"
